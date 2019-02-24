@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2019-02-25T02:07:30.371+09:00
+  initializedAtString: 2019-02-25T02:01:24.986+09:00
+  log:
+  - commitID: 7e12258283358c86843539b0a031b4406870187b
+    mergeA: 
+    mergeB: 
+    authorName: yamato1551
+    authorEmail: 47923511+yamato1551@users.noreply.github.com
+    commitEmail: 47923511+yamato1551@users.noreply.github.com
+    commitName: yamato1551
+    summary: ".gitignore \u304A\u3088\u3073 .gitattributes \u3092\u8FFD\u52A0\u3057\u307E\u3059\u3002"
+    description: ".gitignore \u304A\u3088\u3073 .gitattributes \u3092\u8FFD\u52A0\u3057\u307E\u3059\u3002"
+    timeString: 2019-02-24T01:55:04.000+09:00
+    commitTimeString: 2019-02-24T01:55:04.000+09:00
+    changes:
+    - path: .gitattributes
+      fullPath: "C:\\Users\\natuk\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\UnityData\\Tps\\.gitattributes"
+      projectPath: .gitattributes
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: .gitignore
+      fullPath: "C:\\Users\\natuk\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\UnityData\\Tps\\.gitignore"
+      projectPath: .gitignore
+      originalPath: 
+      status: 4
+      staged: 0
