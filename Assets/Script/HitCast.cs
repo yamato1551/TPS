@@ -10,8 +10,7 @@ public class HitCast : MonoBehaviour
     public Sprite ChangeUI;
     void Start()
     {
-        Cursor.visible = false;
-        //image = this.GetComponent<Image>();
+       //image = this.GetComponent<Image>();
 
     }
     void Update()

@@ -24,7 +24,7 @@ public class EnemyHPStatusUI : MonoBehaviour
     public void EnemyUpdateHPValue()
     {
         hpSlider.value = (float)enemyAI.EnemyHP() / (float)enemyAI.EnemyMaxHP();
-        Debug.Log("Sliderupdate");
+        //Debug.Log("Sliderupdate");
     }
 
 }

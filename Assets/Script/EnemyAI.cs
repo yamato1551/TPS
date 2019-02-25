@@ -16,6 +16,7 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StageManager.EnemyNum += 1;
         Enemyhp = enemyMaxHP;
         hpStatusUI = GetComponentInChildren<EnemyHPStatusUI>();
     }
@@ -38,6 +39,7 @@ public class EnemyAI : MonoBehaviour
         {
             //enemyhp = -1;
             Instantiate(enemyDeath, this.transform.position, Quaternion.identity);
+            StageManager.EnemyNum -= 1;
             Destroy(this.gameObject);
         }
         hpStatusUI.EnemyUpdateHPValue();
