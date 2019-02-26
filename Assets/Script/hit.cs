@@ -11,26 +11,19 @@ public class hit : MonoBehaviour
     void Start()
     {
       
-        count = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        count += Time.deltaTime;
         Vector3 bulletpos = this.gameObject.transform.position;
-       
-        if (count >= 3)
-        {
-            Destroy(this.gameObject);
-        }
-        
+        Destroy(this.gameObject,0.1f);     
     }
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Wall")
         {
-            Debug.Log("Destroy");
+            //Debug.Log("Destroy");
             Destroy(this.gameObject);
             
         }

@@ -494,7 +494,6 @@ C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.DataContract.dll
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\ExCSS.Unity.dll
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.UNetWeaver.dll
-C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.UI.dll
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.IvyParser.dll
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Boo.Lang.Compiler.dll
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Boo.Lang.PatternMatching.dll
@@ -577,5 +576,6 @@ C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEngine.Timeline.xml
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEngine.Networking.xml
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
-C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.UI.xml
 C:\Users\natuk\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp.csproj.CopyComplete
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.UI.xml

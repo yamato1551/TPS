@@ -5,10 +5,10 @@ using UnityEngine.UI;
 public class EnemyAI : MonoBehaviour
 {
     float x, y, z;
-    public Transform target;
+    //public Transform target;
     public float speed;
-    public float changecount;
-    public float count;
+    //public float changecount;
+    //public float count;
     public int enemyMaxHP = 5;
     private int Enemyhp;
     public GameObject enemyDeath;
@@ -19,11 +19,11 @@ public class EnemyAI : MonoBehaviour
         StageManager.EnemyNum += 1;
         Enemyhp = enemyMaxHP;
         hpStatusUI = GetComponentInChildren<EnemyHPStatusUI>();
-    }
+     }
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
         count = Random.Range(1,10);
         changecount += Time.deltaTime;
         if (changecount > count) {
@@ -35,6 +35,7 @@ public class EnemyAI : MonoBehaviour
         float step = speed * Time.deltaTime;
         target.transform.position = new Vector3(x,y,z);
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+        */
         if (Enemyhp == 0)
         {
             //enemyhp = -1;
@@ -42,6 +43,7 @@ public class EnemyAI : MonoBehaviour
             StageManager.EnemyNum -= 1;
             Destroy(this.gameObject);
         }
+        
         hpStatusUI.EnemyUpdateHPValue();
     }
     void OnCollisionEnter(Collision collision)
