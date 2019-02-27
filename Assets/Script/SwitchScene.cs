@@ -67,15 +67,17 @@ public class SwitchScene : MonoBehaviour
     }
     public void GameClear()
     {
-        if(SceneManager.GetActiveScene().name=="Stage1"||
-            SceneManager.GetActiveScene().name == "Stage2"||
+        if (SceneManager.GetActiveScene().name == "Stage1" ||
+            SceneManager.GetActiveScene().name == "Stage2" ||
             SceneManager.GetActiveScene().name == "Stage3")
-        if (StageManager.EnemyNum <= 0)
         {
-            count += 1;
-            if(count % 100f==0)
-            SceneManager.LoadScene("Result");
-            StageManager.Result = true;
+            if (StageManager.EnemyNum <= 0)
+            {
+                count += 1;
+                if (count % 100f == 0)
+                    SceneManager.LoadScene("Result");
+                StageManager.Result = true;
+            }
         }
     }
 

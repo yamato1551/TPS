@@ -7,11 +7,13 @@ public class StageManager : MonoBehaviour
     static public bool[] Stage=new bool[3];
     static public bool Result;
     static public int EnemyNum;
+    static public bool pause;
     // Start is called before the first frame update
     void Start()
     {
         Stageflag();
         cursor();
+        pause = false;
     }
 
     // Update is called once per frame
@@ -42,12 +44,16 @@ public class StageManager : MonoBehaviour
     }
     void cursor()
     {
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
         if (SceneManager.GetActiveScene().name=="Stage1"||
             SceneManager.GetActiveScene().name == "Stage2"||
             SceneManager.GetActiveScene().name == "Stage3")
         {
+
+            Cursor.lockState = CursorLockMode.Locked;
+
             Cursor.visible = false;
         }
     }

@@ -30,13 +30,11 @@ public class PlayerStatus : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-     /*   
-        if (collision.gameObject.tag == "EnemyBullet")
+       if (collision.gameObject.tag == "GameOverArea")
         {
-            Playerhp -= 1;
-            Destroy(enemybullet);
+            swis.GameOver();
         }
-       */ 
+       
     }
     public int PlayerHP()
     {

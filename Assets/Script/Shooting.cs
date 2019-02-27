@@ -46,7 +46,7 @@ public class Shooting : MonoBehaviour
         //Debug.Log("ChangeCount:" + changecount);
        
         count += Time.deltaTime;
-        if (count > 0.5f)
+        if (count > 0.1f)
         {
             if (Input.GetMouseButtonDown(0))
             {

@@ -13,7 +13,7 @@ public class PlayerMove : MonoBehaviour
     float mouseMoveY;
     public float sentivity = 0.5f;
     Rigidbody rb;
-    [Range(1.0f,20.0f)]
+    [Range(1.0f, 20.0f)]
     public float jump;
     float gravity;
     public bool jumpflag=true;
@@ -24,28 +24,31 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        //gravity = 0;
-        mouseMoveX = Input.GetAxis("MouseX") * sentivity;
-        transform.Rotate(0, mouseMoveX, 0);
+        if (StageManager.pause == true)
+        {
+            //gravity = 0;
+            mouseMoveX = Input.GetAxis("MouseX") * sentivity;
+            transform.Rotate(0, mouseMoveX, 0);
 
-        Transform mytransform = this.transform;
-        if (jumpflag == true)
-        {
-            moveX = Input.GetAxis("Horizontal") * speed;
-            moveZ = Input.GetAxis("Vertical") * speed;
-           
-        }
-        mytransform.Translate(moveX, moveY, moveZ);
-        if (Input.GetKey(KeyCode.Space)&&jumpflag==true)
-        {
-            moveY += jump;
-            jumpflag = false;
-            gravity = 0;
-        }
-        if (jumpflag == false)
-        {
-            gravity = 0.05f;
-            moveY -= gravity;
+            Transform mytransform = this.transform;
+            if (jumpflag == true)
+            {
+                moveX = Input.GetAxis("Horizontal") * speed;
+                moveZ = Input.GetAxis("Vertical") * speed;
+
+            }
+            mytransform.Translate(moveX, moveY, moveZ);
+            if (Input.GetKey(KeyCode.Space) && jumpflag == true)
+            {
+                moveY += jump;
+                jumpflag = false;
+                gravity = 0;
+            }
+            if (jumpflag == false)
+            {
+                gravity = 0.05f;
+                moveY -= gravity;
+            }
         }
     }
     void FixedUpdate()
@@ -58,8 +61,11 @@ public class PlayerMove : MonoBehaviour
         {
             jumpflag = true;
             moveY = 0;
-            Debug.Log("floor");
-
+            gravity = 0;
         }    
+    }
+    void OnCollisionExit(Collision colision)
+    {
+        jumpflag = false;
     }
 }

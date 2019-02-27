@@ -9,6 +9,7 @@ TagManager:
   - floor
   - bullet
   - EnemyBullet
+  - GameOverArea
   layers:
   - Default
   - TransparentFX

@@ -39,11 +39,14 @@ public class EnemyShotShell : MonoBehaviour
     
     public void EnemyShot()
     {
-        GameObject bullet = Instantiate(bulletPrefab) as GameObject;
-        Vector3 force;
-        force = this.gameObject.transform.forward * shotspeed;
-        bullet.GetComponent<Rigidbody>().AddForce(force);
-        bullet.transform.position = muzzle.position;
-        Destroy(bullet, 5f);
+        if (StageManager.pause==true)
+        {
+            GameObject bullet = Instantiate(bulletPrefab) as GameObject;
+            Vector3 force;
+            force = this.gameObject.transform.forward * shotspeed;
+            bullet.GetComponent<Rigidbody>().AddForce(force);
+            bullet.transform.position = muzzle.position;
+            Destroy(bullet, 5f);
+        }
     }
 }

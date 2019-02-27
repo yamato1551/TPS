@@ -26,5 +26,9 @@ public class gravity : MonoBehaviour
         {
             Destroy(this.gameObject, 0.2f);
         }
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
