@@ -80,5 +80,9 @@ public class SwitchScene : MonoBehaviour
             }
         }
     }
+    public void Title()
+    {
+        SceneManager.LoadScene("Title");
+    }
 
 }

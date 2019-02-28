@@ -579,3 +579,7 @@ C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEngine.SpatialTracking.x
 C:\Users\natuk\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.UI.dll
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Editor.dll
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Runtime.dll
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Editor.pdb
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Runtime.pdb

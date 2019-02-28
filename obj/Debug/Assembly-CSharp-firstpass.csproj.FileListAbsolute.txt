@@ -287,3 +287,9 @@ C:\Users\natuk\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp-firstpass.csproj.C
 C:\Users\natuk\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 C:\Users\natuk\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\natuk\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Editor.dll
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Runtime.dll
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Editor.pdb
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Runtime.pdb
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.UI.xml

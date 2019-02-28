@@ -6,7 +6,7 @@ public class hit : MonoBehaviour
 {
     public float count;
     //int Hit = 0;
-    public GameObject particlebox;
+    public GameObject HitEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +29,7 @@ public class hit : MonoBehaviour
         }
         if (other.gameObject.tag == "Enemy")
         {
-            Instantiate(particlebox, this.transform.position, Quaternion.identity);
+            Instantiate(HitEffect, this.transform.position, Quaternion.identity);
             Debug.Log("hit");
             Destroy(this.gameObject);
 

@@ -122,5 +122,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
-  particlebox: {fileID: 1785504622167680628, guid: 17db68e5628b9b04ebf53429990ff22a,
+  HitEffect: {fileID: 8120684920401080409, guid: 8bbb07bc9c2d23a49bf99dc3224a263f,
     type: 3}
