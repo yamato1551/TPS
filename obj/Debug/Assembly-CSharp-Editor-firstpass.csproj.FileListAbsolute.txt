@@ -316,3 +316,4 @@ C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Editor.d
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Runtime.dll
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Editor.pdb
 C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\Unity.Postprocessing.Runtime.pdb
+C:\Users\natuk\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.Android.Extensions.dll

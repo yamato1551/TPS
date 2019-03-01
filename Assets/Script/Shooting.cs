@@ -44,21 +44,22 @@ public class Shooting : MonoBehaviour
         changecount += Time.deltaTime;
     */
         //Debug.Log("ChangeCount:" + changecount);
-       
-        count += Time.deltaTime;
-        if (count > 0.1f)
+        if (StageManager.pause == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            count += Time.deltaTime;
+            if (count > 0.1f)
             {
-                GameObject bullets = Instantiate(bullet) as GameObject;
-                Vector3 force;
-                force = this.gameObject.transform.forward * speed;
-                bullets.GetComponent<Rigidbody>().AddForce(force);
-                bullets.transform.position = muzzle.position;
-                count = 0;
+                if (Input.GetMouseButtonDown(0))
+                {
+                    GameObject bullets = Instantiate(bullet) as GameObject;
+                    Vector3 force;
+                    force = this.gameObject.transform.forward * speed;
+                    bullets.GetComponent<Rigidbody>().AddForce(force);
+                    bullets.transform.position = muzzle.position;
+                    count = 0;
+                }
             }
         }
-
     }
 
 }

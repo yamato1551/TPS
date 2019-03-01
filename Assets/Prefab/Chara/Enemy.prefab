@@ -299,7 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   enemyMaxHP: 5
-  enemyDeath: {fileID: 1580055788780057926, guid: 981026190dada7c47ad6aa0b3f56199b,
+  enemyDeath: {fileID: 4340842449290523688, guid: 97eafedbce55e754f99f6aa1ed884fb6,
     type: 3}
 --- !u!114 &2087691096339443489
 MonoBehaviour:

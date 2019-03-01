@@ -18,7 +18,18 @@ public class StageManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
+        if (Input.GetKeyDown("q"))
+        {
+            Time.timeScale = 0;
+            pause = false;
+        }
+        else
+        {
+            Time.timeScale = 1;
+            pause = true;
+        }
+        */
        
     }
     void Stageflag()

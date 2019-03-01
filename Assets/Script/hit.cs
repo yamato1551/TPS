@@ -17,7 +17,7 @@ public class hit : MonoBehaviour
     void Update()
     {
         Vector3 bulletpos = this.gameObject.transform.position;
-        Destroy(this.gameObject,0.8f);     
+        Destroy(this.gameObject,count);     
     }
     void OnCollisionEnter(Collision other)
     {
