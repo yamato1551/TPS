@@ -8,6 +8,7 @@ public class PlayerStatus : MonoBehaviour
     public int Playerhp;
     private PlayerHPStatusUI hpStatusUI;
     private SwitchScene swis;
+    public bool isDamage = false;
     //private GameObject enemybullet;
     // Start is called before the first frame update
     void Start()
@@ -21,11 +22,16 @@ public class PlayerStatus : MonoBehaviour
     void Update()
     {
         //enemybullet = GameObject.Find("EnemyBullet");
-
+        this.gameObject.GetComponent<Renderer>().material.color = new Color32(58, 103, 152, 1);
         hpStatusUI.PlayerUpdateHPValue();
         if (Playerhp <= 0)
         {
             swis.GameOver();
+        }
+        if (isDamage)
+        {
+            this.gameObject.GetComponent<Renderer>().material.color = new Color32(58, 0, 152, 1);
+            Invoke("flagDeray",0.03f);
         }
     }
     void OnTriggerEnter(Collider collision)
@@ -43,6 +49,10 @@ public class PlayerStatus : MonoBehaviour
     public int PlayerMaxHP()
     {
         return playerMaxHP;
+    }
+    void flagDeray()
+    {
+        isDamage = false;
     }
 
 }

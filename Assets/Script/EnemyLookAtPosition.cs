@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyLookAtPosition : MonoBehaviour
 {
     public GameObject player;
+    public float ypos;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,6 @@ public class EnemyLookAtPosition : MonoBehaviour
     {
         Vector3 pos = player.transform.position;
 
-        this.gameObject.transform.position = new Vector3(pos.x, 1, pos.z);
+        this.gameObject.transform.position = new Vector3(pos.x, ypos, pos.z);
     }
 }

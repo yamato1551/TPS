@@ -17,6 +17,7 @@ public class EnemyBulleyHit : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             playerstatus.Playerhp -= 1;
+            playerstatus.isDamage = true;
             Destroy(this.gameObject);
             Debug.Log("hit");
         }    
