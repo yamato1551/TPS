@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 3387609829700306144}
   - component: {fileID: 3387609829700306175}
   - component: {fileID: 3387609829700306174}
-  - component: {fileID: 3387609829700306172}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,22 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3387609829700306172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3387609829700306147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3b20f9acf550dd46ae2d7dff9101915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  NUI: {fileID: 21300000, guid: 8f86c4c1face17244b5d86f18e1375de, type: 3}
-  ColorChangeUI: {fileID: 21300000, guid: d252341c1639ad5429ccd0c9f217cfd2, type: 3}
-  ChangeUI: {fileID: 21300000, guid: d1287e552c39ca1489eae1b1d21cc74a, type: 3}
 --- !u!1 &3387609829922548992
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,8 +91,9 @@ GameObject:
   - component: {fileID: 3387609829922548993}
   - component: {fileID: 3387609829922549020}
   - component: {fileID: 3387609829922549021}
+  - component: {fileID: 1015652112}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,7 +143,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -253,6 +237,24 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1015652112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387609829922548992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b20f9acf550dd46ae2d7dff9101915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  NUI: {fileID: 21300000, guid: 8f86c4c1face17244b5d86f18e1375de, type: 3}
+  ColorChangeUI: {fileID: 21300000, guid: d252341c1639ad5429ccd0c9f217cfd2, type: 3}
+  ChangeUI: {fileID: 21300000, guid: d1287e552c39ca1489eae1b1d21cc74a, type: 3}
+  RHG: {fileID: 0}
+  hitflag: 0
 --- !u!1 &3387609829972688804
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMaxHP: 10
   Playerhp: 0
+  isDamage: 0
 --- !u!1 &3387609830544599196
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,9 +438,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3387609830544599197}
-  - component: {fileID: 3387609830544599194}
   - component: {fileID: 3387609830544599195}
-  m_Layer: 0
+  - component: {fileID: 1215901739}
+  m_Layer: 2
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,19 +461,6 @@ Transform:
   m_Father: {fileID: 3387609829700306144}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3387609830544599194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3387609830544599196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e9f99e7e0c0b86438d573d0096deb60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 3387609829972688805}
 --- !u!114 &3387609830544599195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +477,20 @@ MonoBehaviour:
   muzzle: {fileID: 3387609830544599197}
   speed: 25000
   count: 0.5
+--- !u!114 &1215901739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387609830544599196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313124cccea38394e8789c14c3013ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 3387609829972688805}
+  EnemyHitTarget: {fileID: 0}
 --- !u!1 &3387609831042292189
 GameObject:
   m_ObjectHideFlags: 0
