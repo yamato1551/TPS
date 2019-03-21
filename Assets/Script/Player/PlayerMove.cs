@@ -17,13 +17,16 @@ public class PlayerMove : MonoBehaviour
     public float jump;
     float gravity;
     public bool jumpflag=true;
-    void Start()
+    private Animator Animain;
+     void Start()
     {
+        Animain = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
+
         if (StageManager.pause == true)
         {
             //gravity = 0;
@@ -40,6 +43,7 @@ public class PlayerMove : MonoBehaviour
             mytransform.Translate(moveX, moveY, moveZ);
             if (Input.GetKey(KeyCode.Space) && jumpflag == true)
             {
+                Animain.SetTrigger("Jump");
                 moveY += jump;
                 jumpflag = false;
                 gravity = 0;
@@ -51,6 +55,7 @@ public class PlayerMove : MonoBehaviour
             }
         }
     }
+   
     void FixedUpdate()
     {
         rb.velocity = new Vector3(moveX, 0, moveZ);    
@@ -59,6 +64,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "floor")
         {
+            //Animain.SetBool("Jump", false);
             jumpflag = true;
             moveY = 0;
             gravity = 0;
