@@ -26,7 +26,6 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-
         if (StageManager.pause == true)
         {
             //gravity = 0;
@@ -53,6 +52,43 @@ public class PlayerMove : MonoBehaviour
                 gravity = 0.05f;
                 moveY -= gravity;
             }
+            if (Input.GetKey(KeyCode.W)&&jumpflag==true)
+            {
+                Animain.SetBool("Run",true);
+            }
+            else
+            {
+                Animain.SetBool("Run",false);
+                Animain.SetTrigger("Idle");
+            }
+            if (Input.GetKey(KeyCode.S) && jumpflag == true)
+            {
+                Animain.SetBool("Back", true);
+            }
+            else
+            {
+                Animain.SetBool("Back", false);
+                Animain.SetTrigger("Idle");
+            }
+            if (Input.GetKey(KeyCode.A) && jumpflag == true)
+            {
+                Animain.SetBool("Left", true);
+            }else
+            {
+                Animain.SetBool("Left", false);
+                Animain.SetTrigger("Idle");
+            }
+            if (Input.GetKey(KeyCode.D) && jumpflag == true)
+            {
+                Animain.SetBool("Right", true);
+            }
+            else
+            {
+                Animain.SetBool("Right", false);
+                Animain.SetTrigger("Idle");
+            }
+
+
         }
     }
    
