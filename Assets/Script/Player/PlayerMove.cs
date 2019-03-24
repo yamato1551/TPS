@@ -100,6 +100,11 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "floor")
         {
+            Vector3 groudobjpos = collision.gameObject.transform.position;
+            Vector3 pos = this.gameObject.transform.position;
+            pos.y = 1.6f;
+            this.gameObject.transform.position=new Vector3(pos.x, pos.y+groudobjpos.y, pos.z);
+            Debug.Log(pos);
             //Animain.SetBool("Jump", false);
             jumpflag = true;
             moveY = 0;

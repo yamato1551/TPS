@@ -297,10 +297,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0503593797ee02a438a771b4c29b5f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
   enemyMaxHP: 5
+  speed: 0
+  distance: 0
   enemyDeath: {fileID: 4340842449290523688, guid: 97eafedbce55e754f99f6aa1ed884fb6,
     type: 3}
+  directionx: 0
+  directionz: 0
+  moveflagx: 0
+  moveflagy: 0
+  moveflagz: 0
 --- !u!114 &2087691096339443489
 MonoBehaviour:
   m_ObjectHideFlags: 0

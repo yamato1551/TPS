@@ -21,18 +21,12 @@ public class hit : MonoBehaviour
     }
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Wall")
-        {
-            //Debug.Log("Destroy");
+        
             Destroy(this.gameObject);
-            
-        }
+         
         if (other.gameObject.tag == "Enemy")
         {
             Instantiate(HitEffect, this.transform.position, Quaternion.identity);
-            Debug.Log("hit");
-            Destroy(this.gameObject);
-
         }
 
     }
