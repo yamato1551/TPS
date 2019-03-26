@@ -14,6 +14,10 @@ public class StageManager : MonoBehaviour
         Stageflag();
         cursor();
         pause = false;
+        if (SceneManager.GetActiveScene().name == "Result")
+        {
+            EnemyNum = 0;
+        }
     }
 
     // Update is called once per frame

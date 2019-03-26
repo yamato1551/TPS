@@ -18,8 +18,12 @@ public class EnemyBulleyHit : MonoBehaviour
         {
             playerstatus.Playerhp -= 1;
             playerstatus.isDamage = true;
-            Destroy(this.gameObject);
             Debug.Log("hit");
-        }    
+        }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        Destroy(this.gameObject);
+
     }
 }

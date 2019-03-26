@@ -17,6 +17,6 @@ public class EnemyLookAtPosition : MonoBehaviour
     {
         Vector3 pos = player.transform.position;
 
-        this.gameObject.transform.position = new Vector3(pos.x, ypos, pos.z);
+        this.gameObject.transform.position = new Vector3(pos.x,pos.y + ypos, pos.z);
     }
 }
