@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\bulletaget.cs" />
     <Compile Include="Assets\Script\DestroyCount.cs" />
+    <Compile Include="Assets\Script\Enemy\BossEnemyHit.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyAI.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyBulleyHit.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyHPStatusUI.cs" />

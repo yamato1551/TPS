@@ -6,7 +6,7 @@ public class EnemyAI : MonoBehaviour
 {
     //private Vector3 move;
     public int enemyMaxHP = 5;
-    private int Enemyhp;
+    [HideInInspector]public int Enemyhp;
     public float speed;
     public float distance;
     public GameObject enemyDeath;
@@ -17,13 +17,20 @@ public class EnemyAI : MonoBehaviour
     //public Vector3 movepos;
     public bool directionx,directionz,moveflagx,moveflagy,moveflagz;
     private Vector3 initialPosition;
-   // Start is called before the first frame update
+    private GameObject child;
+    int count = 0;
+        // Start is called before the first frame update
     void Start()
     {
         initialPosition = transform.position;
         StageManager.EnemyNum += 1;
         Enemyhp = enemyMaxHP;
         hpStatusUI = GetComponentInChildren<EnemyHPStatusUI>();
+        foreach(Transform child in transform)
+        {
+            Debug.Log("Child[" + count + "]:" + child.name);
+            count++;
+        }
         #region
         /*
         pos = this.gameObject.transform.position;
@@ -74,7 +81,9 @@ public class EnemyAI : MonoBehaviour
         if (collision.gameObject.tag == "bullet")
         {
             Enemyhp -= 1;
-        }    
+        }
+
+        
     }
    
     public int EnemyHP()
