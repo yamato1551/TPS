@@ -18,8 +18,11 @@ public class PlayerMove : MonoBehaviour
     float gravity;
     public bool jumpflag=true;
     private Animator Animain;
+    public AudioClip jumpSE;
+    private AudioSource audiosouce;
      void Start()
     {
+        audiosouce = gameObject.GetComponent<AudioSource>();
         Animain = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
     }
@@ -42,6 +45,8 @@ public class PlayerMove : MonoBehaviour
             mytransform.Translate(moveX, moveY, moveZ);
             if (Input.GetKey(KeyCode.Space) && jumpflag == true)
             {
+                audiosouce.clip = jumpSE;
+                audiosouce.Play();
                 Animain.SetTrigger("Jump");
                 moveY += jump;
                 jumpflag = false;

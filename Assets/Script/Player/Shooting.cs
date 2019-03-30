@@ -10,10 +10,14 @@ public class Shooting : MonoBehaviour
     public Transform muzzle;
     public float speed = 1000;
     public float count = 0.5f;
+    public AudioClip Shot;
+    private AudioSource audiosouce;
     //GameObject enemy;
 
     void Start()
     {
+        audiosouce = gameObject.GetComponentInParent<AudioSource>();
+        
         //enemy = GameObject.Find("Enemy");
 
     }
@@ -51,6 +55,8 @@ public class Shooting : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
+                    audiosouce.clip = Shot;
+                    audiosouce.Play();
                     GameObject bullets = Instantiate(bullet) as GameObject;
                     Vector3 force;
                     force = this.gameObject.transform.forward * speed;

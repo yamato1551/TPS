@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class SwitchScene : MonoBehaviour
 {
     float count;
+    
     void Update()
     {
         if (SceneManager.GetActiveScene().name == "Title")
         {
             if (Input.anyKey)
             {
+                
                 SceneManager.LoadScene("StageSelect");
             }
         }
