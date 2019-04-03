@@ -63,20 +63,22 @@
     <Compile Include="Assets\Script\bulletaget.cs" />
     <Compile Include="Assets\Script\DestroyCount.cs" />
     <Compile Include="Assets\Script\Enemy\BossEnemyHit.cs" />
+    <Compile Include="Assets\Script\Enemy\DestructableBullet.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyAI.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyBulleyHit.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyHPStatusUI.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyLookAT.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyLookAtPosition.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyShotShell.cs" />
+    <Compile Include="Assets\Script\Enemy\PlayerGet.cs" />
     <Compile Include="Assets\Script\gravity.cs" />
+    <Compile Include="Assets\Script\JointRotate.cs" />
     <Compile Include="Assets\Script\MoveFloor.cs" />
     <Compile Include="Assets\Script\OverorClear.cs" />
     <Compile Include="Assets\Script\Player\FootSE.cs" />
     <Compile Include="Assets\Script\Player\hit.cs" />
     <Compile Include="Assets\Script\Player\HitCast.cs" />
     <Compile Include="Assets\Script\Player\LookAtHitEnemy.cs" />
-    <Compile Include="Assets\Script\Player\PlayerGet.cs" />
     <Compile Include="Assets\Script\Player\PlayerHPStatusUI.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\Player\PlayerStatus.cs" />
@@ -91,25 +93,25 @@
     <None Include="Assets\Shader\Toon.shader" />
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -313,13 +315,13 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/natuk/Documents/GitHub/TPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/owner/Documents/GitHub/TPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

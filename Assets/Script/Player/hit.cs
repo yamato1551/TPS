@@ -19,17 +19,22 @@ public class hit : MonoBehaviour
         Vector3 bulletpos = this.gameObject.transform.position;
         Destroy(this.gameObject,count);     
     }
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision collision)
     {
-        
-            Destroy(this.gameObject);
-         
-        if (other.gameObject.tag == "Enemy")
+
+        Destroy(this.gameObject);
+
+        if (collision.gameObject.tag == "Enemy")
         {
             Instantiate(HitEffect, this.transform.position, Quaternion.identity);
         }
 
     }
-   
-
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "EnemyBullet")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

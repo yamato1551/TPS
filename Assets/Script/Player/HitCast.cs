@@ -20,7 +20,7 @@ public class HitCast : MonoBehaviour
         Debug.DrawLine(ray.origin, ray.direction * distance, Color.red);
         if (Physics.Raycast(ray,out hit, distance))
         {
-            if (hit.collider.tag == "Enemy")
+            if (hit.collider.tag == "Enemy"||hit.collider.tag=="EnemyBullet")
             {
                 hitflag = true;
                 RHG.transform.position = new Vector3(hit.point.x, hit.point.y, hit.point.z);

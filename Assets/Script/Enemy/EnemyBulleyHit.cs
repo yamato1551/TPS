@@ -21,9 +21,5 @@ public class EnemyBulleyHit : MonoBehaviour
             Debug.Log("hit");
         }
     }
-    void OnCollisionEnter(Collision collision)
-    {
-        Destroy(this.gameObject);
 
-    }
 }

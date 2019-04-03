@@ -10,6 +10,7 @@ public class EnemyShotShell : MonoBehaviour
     private int count;
     public bool shotflag;
     public float getcount;
+    public int shotframe=80;
      // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class EnemyShotShell : MonoBehaviour
         {
             count += 1;
             //フレームごとに実行する
-            if (count % 80 == 0)
+            if (count % shotframe == 0)
             {
                 EnemyShot();
             }

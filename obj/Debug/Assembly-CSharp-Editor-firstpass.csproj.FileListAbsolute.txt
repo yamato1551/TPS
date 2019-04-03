@@ -635,4 +635,3 @@ C:\Users\owner\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp-Editor-firstpass.c
 C:\Users\owner\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CopyComplete
 C:\Users\owner\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp-Editor-firstpass.dll
 C:\Users\owner\Documents\GitHub\TPS\obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-C:\Users\owner\Documents\GitHub\TPS\Temp\bin\Debug\UnityEditor.Android.Extensions.dll
