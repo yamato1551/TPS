@@ -11,6 +11,7 @@ public class EnemyShotShell : MonoBehaviour
     public bool shotflag;
     public float getcount;
     public int shotframe=80;
+    public float bulletdestroycount = 5f;
      // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +48,7 @@ public class EnemyShotShell : MonoBehaviour
             force = this.gameObject.transform.forward * shotspeed;
             bullet.GetComponent<Rigidbody>().AddForce(force);
             bullet.transform.position = muzzle.position;
-            Destroy(bullet, 5f);
+            Destroy(bullet, bulletdestroycount);
         }
     }
 }

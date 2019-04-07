@@ -18,7 +18,7 @@ public class EnemyBulleyHit : MonoBehaviour
         {
             playerstatus.Playerhp -= 1;
             playerstatus.isDamage = true;
-            Debug.Log("hit");
+            //Debug.Log("hit");
         }
     }
 

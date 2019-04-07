@@ -32,9 +32,10 @@ public class hit : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "EnemyBullet")
+        if (other.gameObject.tag == "BossEnemyBullet")
         {
             Destroy(this.gameObject);
+            Instantiate(HitEffect, this.transform.position, Quaternion.identity);
         }
     }
 }

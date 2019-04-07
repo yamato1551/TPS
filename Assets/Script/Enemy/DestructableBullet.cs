@@ -10,7 +10,7 @@ public class DestructableBullet : MonoBehaviour
         if (collision.gameObject.tag == "bullet")
         {
             Debug.Log("hit");
-            Instantiate(destroyeffect);
+            Instantiate(destroyeffect,this.transform.position,Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

@@ -24,10 +24,7 @@ public class HitCast : MonoBehaviour
             {
                 hitflag = true;
                 RHG.transform.position = new Vector3(hit.point.x, hit.point.y, hit.point.z);
-                //Debug.Log("hit;"+hit.point);
-                //Debug.Log("ray;" + ray);
                 image.sprite = ColorChangeUI;
-                //image.sprite = ChangeUI;
             }
            
         }
