@@ -6,8 +6,7 @@ public class EnemyHPStatusUI : MonoBehaviour
 {
     private EnemyAI enemyAI;
     private Slider hpSlider;
-
-    // Start is called before the first frame update
+   // Start is called before the first frame update
     void Start()
     {
         enemyAI = transform.root.GetComponent<EnemyAI>();
@@ -18,13 +17,16 @@ public class EnemyHPStatusUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.rotation = Camera.main.transform.rotation;
+       
+            transform.rotation = Camera.main.transform.rotation;
+        
     }
 
     public void EnemyUpdateHPValue()
     {
         hpSlider.value = (float)enemyAI.EnemyHP() / (float)enemyAI.EnemyMaxHP();
-        //Debug.Log("Sliderupdate");
+            //Debug.Log("Sliderupdate");
+        
     }
 
 }

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Script\Enemy\EnemyLookAtPosition.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyShotShell.cs" />
     <Compile Include="Assets\Script\Enemy\PlayerGet.cs" />
+    <Compile Include="Assets\Script\EventCamera.cs" />
     <Compile Include="Assets\Script\gravity.cs" />
     <Compile Include="Assets\Script\JointRotate.cs" />
     <Compile Include="Assets\Script\MoveFloor.cs" />
