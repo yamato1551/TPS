@@ -5,11 +5,9 @@ using UnityEngine;
 public class EventCamera : MonoBehaviour
 {
     public float cameraspeed;
-    public GameObject cam;
     // Start is called before the first frame update
     void Start()
     {
-        cam.enabled = false;
     }
 
     // Update is called once per frame

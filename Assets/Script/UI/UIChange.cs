@@ -9,6 +9,7 @@ public class UIChange : MonoBehaviour
     private float alpha;
     private float count;
     private bool act;
+    bool stop=true;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,23 +21,26 @@ public class UIChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //startui();
-        count += 1;
-        start.color = new Color(1f, 1f, 1f, alpha);
-        if (count % 70 == 0)
+        if (stop == true)
         {
-            act = true;
+            //startui();
+            count += 1;
+            start.color = new Color(1f, 1f, 1f, alpha);
+            if (count % 70 == 0)
+            {
+                act = true;
+            }
+            if (act == true)
+            {
+                alpha -= 0.1f;
+            }
+            if (alpha <= 0)
+            {
+                start.enabled = false;
+                StageManager.pause = true;
+                stop = false;
+            }
         }
-        if (act == true)
-        {
-            alpha -= 0.1f;
-        }
-        if (alpha <= 0)
-        {
-            start.enabled = false;
-            StageManager.pause = true;
-        }
-
         Enemys.text = "Enemy:" + StageManager.EnemyNum;
 
     }
