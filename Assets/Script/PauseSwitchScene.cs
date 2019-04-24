@@ -20,14 +20,17 @@ public class PauseSwitchScene : MonoBehaviour
     {
         if (StageManager.Stage[0] == true)
         {
+            StageManager.EnemyNum = 0;
             SceneManager.LoadScene("Stage1");
         }
         if (StageManager.Stage[1] == true)
-        {
+        { 
+            StageManager.EnemyNum = 0;
             SceneManager.LoadScene("Stage2");
         }
         if (StageManager.Stage[2] == true)
         {
+            StageManager.EnemyNum = 0;
             SceneManager.LoadScene("Stage3");
         }
     }

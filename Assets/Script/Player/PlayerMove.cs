@@ -25,6 +25,7 @@ public class PlayerMove : MonoBehaviour
         audiosouce = gameObject.GetComponent<AudioSource>();
         Animain = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
+        jumpflag = false;
     }
 
     void Update()

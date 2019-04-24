@@ -11,6 +11,7 @@ public class EnemyAI : MonoBehaviour
     public float distance;
     public GameObject enemyDeath;
     private EnemyHPStatusUI hpStatusUI;
+    public bool EnemyCountflag=true;
     //public float pos;
     //private Vector3 nowpos;
     //private Vector3 pos;
@@ -23,7 +24,10 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         initialPosition = transform.position;
-        StageManager.EnemyNum += 1;
+        if (EnemyCountflag)
+        {
+            StageManager.EnemyNum += 1;
+        }
         Enemyhp = enemyMaxHP;
         hpStatusUI = GetComponentInChildren<EnemyHPStatusUI>();
         foreach(Transform child in transform)
@@ -69,7 +73,10 @@ public class EnemyAI : MonoBehaviour
         {
             //enemyhp = -1;
             Instantiate(enemyDeath, this.transform.position, Quaternion.identity);
-            StageManager.EnemyNum -= 1;
+            if (EnemyCountflag)
+            {
+                StageManager.EnemyNum -= 1;
+            }
             Destroy(this.gameObject);
         }
         

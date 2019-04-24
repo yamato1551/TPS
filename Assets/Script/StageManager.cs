@@ -11,6 +11,7 @@ public class StageManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         Stageflag();
         cursor();
         pause = false;
@@ -46,6 +47,7 @@ public class StageManager : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name == "Stage2")
         {
+
             Stage[0] = false;
             Stage[1] = true;
             Stage[2] = false;
@@ -54,7 +56,7 @@ public class StageManager : MonoBehaviour
         {
             Stage[0] = false;
             Stage[1] = false;
-            Stage[2] = true;
+            Stage[2] = true; ;
         }
     }
     void cursor()
