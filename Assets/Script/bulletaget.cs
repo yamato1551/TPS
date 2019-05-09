@@ -5,6 +5,9 @@ using UnityEngine;
 public class bulletaget : MonoBehaviour {
 
     public Transform target;
+    void Start()
+    {
+    }
 	void Update () {
         transform.LookAt(target);
 	}

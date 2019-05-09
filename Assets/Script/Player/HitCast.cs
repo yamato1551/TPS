@@ -16,7 +16,7 @@ public class HitCast : MonoBehaviour
         image.sprite = NUI;
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
-        int distance = 1000;
+        int distance = 120;
         Debug.DrawLine(ray.origin, ray.direction * distance, Color.red);
         if (Physics.Raycast(ray,out hit, distance))
         {

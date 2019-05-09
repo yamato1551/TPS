@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerGet : MonoBehaviour
 {
     private EnemyShotShell shot;
-    void Start()
+   void Start()
     {
         shot = GetComponentInParent<EnemyShotShell>();
     }

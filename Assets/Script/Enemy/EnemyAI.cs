@@ -32,7 +32,7 @@ public class EnemyAI : MonoBehaviour
         hpStatusUI = GetComponentInChildren<EnemyHPStatusUI>();
         foreach(Transform child in transform)
         {
-            Debug.Log("Child[" + count + "]:" + child.name);
+            //Debug.Log("Child[" + count + "]:" + child.name);
             count++;
         }
         #region

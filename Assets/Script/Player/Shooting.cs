@@ -9,7 +9,8 @@ public class Shooting : MonoBehaviour
     public GameObject bullet;
     public Transform muzzle;
     public float speed = 1000;
-    public float count = 0.5f;
+    private float count;
+    public float shotflame;
     public AudioClip Shot;
     private AudioSource audiosouce;
     //GameObject enemy;
@@ -17,14 +18,15 @@ public class Shooting : MonoBehaviour
     void Start()
     {
         audiosouce = gameObject.GetComponentInParent<AudioSource>();
-        
+        count = shotflame;
         //enemy = GameObject.Find("Enemy");
 
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        #region
         /*
         if (changecount > 0.2f)
         {
@@ -48,10 +50,11 @@ public class Shooting : MonoBehaviour
         changecount += Time.deltaTime;
     */
         //Debug.Log("ChangeCount:" + changecount);
+        #endregion
         if (StageManager.pause == true)
         {
             count += Time.deltaTime;
-            if (count > 0.1f)
+            if (count > shotflame)
             {
                 if (Input.GetMouseButtonDown(0))
                 {

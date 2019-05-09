@@ -28,7 +28,7 @@ public class PlayerMove : MonoBehaviour
         jumpflag = false;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (StageManager.pause == true)
         {
@@ -58,13 +58,13 @@ public class PlayerMove : MonoBehaviour
                 gravity = 0.05f;
                 moveY -= gravity;
             }
-            if (Input.GetKey(KeyCode.W)&&jumpflag==true)
+            if (Input.GetKey(KeyCode.W) && jumpflag == true)
             {
-                Animain.SetBool("Run",true);
+                Animain.SetBool("Run", true);
             }
             else
             {
-                Animain.SetBool("Run",false);
+                Animain.SetBool("Run", false);
                 Animain.SetTrigger("Idle");
             }
             if (Input.GetKey(KeyCode.S) && jumpflag == true)
@@ -79,7 +79,8 @@ public class PlayerMove : MonoBehaviour
             if (Input.GetKey(KeyCode.A) && jumpflag == true)
             {
                 Animain.SetBool("Left", true);
-            }else
+            }
+            else
             {
                 Animain.SetBool("Left", false);
                 Animain.SetTrigger("Idle");
@@ -96,10 +97,6 @@ public class PlayerMove : MonoBehaviour
 
 
         }
-    }
-   
-    void FixedUpdate()
-    {
         rb.velocity = new Vector3(moveX, 0, moveZ);    
     }
     void OnCollisionEnter(Collision collision)
@@ -115,7 +112,8 @@ public class PlayerMove : MonoBehaviour
             jumpflag = true;
             moveY = 0;
             gravity = 0;
-        }    
+        }
+        
     }
     void OnCollisionExit(Collision colision)
     {

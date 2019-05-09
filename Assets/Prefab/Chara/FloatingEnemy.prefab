@@ -429,17 +429,20 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
+    m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 0}
@@ -483,7 +486,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9188933603992201451}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 4.73, z: 46.76}
   m_LocalScale: {x: 3, y: 5, z: 3}
   m_Children:
@@ -568,14 +571,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyMaxHP: 5
+  Enemyhp: 0
   speed: 1
-  distance: 5
+  distance: 10
   enemyDeath: {fileID: 4340842449290523688, guid: 97eafedbce55e754f99f6aa1ed884fb6,
     type: 3}
+  EnemyCountflag: 1
   directionx: 0
   directionz: 0
-  moveflagx: 1
-  moveflagy: 0
+  moveflagx: 0
+  moveflagy: 1
   moveflagz: 0
 --- !u!114 &9188933603992201441
 MonoBehaviour:
@@ -589,7 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b819f936cf60d843ae6db8e32a00c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetobj: {fileID: 0}
+  speed: 1
 --- !u!1 &9188933604157002212
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +973,8 @@ MonoBehaviour:
   shotspeed: 1000
   shotflag: 0
   getcount: 0
+  shotframe: 40
+  bulletdestroycount: 5
 --- !u!1 &9188933605445661599
 GameObject:
   m_ObjectHideFlags: 0
