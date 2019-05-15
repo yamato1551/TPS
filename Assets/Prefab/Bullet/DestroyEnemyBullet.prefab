@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8536053435696439749}
   - component: {fileID: 3231066595077476362}
   - component: {fileID: 1567460783435337629}
+  - component: {fileID: -8495944642025112322}
   m_Layer: 0
   m_Name: DestroyEnemyBullet
   m_TagString: BossEnemyBullet
@@ -136,3 +137,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &-8495944642025112322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4880094767029226555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942e64bb0c1bb294aade49a236ef70b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

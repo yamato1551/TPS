@@ -62,6 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GlobalOutline\Scripts\OutlineCanvas.cs" />
+    <Compile Include="Assets\GlobalOutline\Scripts\OutlineEffect.cs" />
+    <Compile Include="Assets\GlobalOutline\Scripts\OutlineManager.cs" />
+    <Compile Include="Assets\GlobalOutline\Scripts\OutlineTests.cs" />
     <Compile Include="Assets\Script\bulletaget.cs" />
     <Compile Include="Assets\Script\DestroyCount.cs" />
     <Compile Include="Assets\Script\Enemy\BossEnemyHit.cs" />
@@ -100,7 +104,10 @@
     <Compile Include="Assets\Script\UI\UIChange.cs" />
     <Compile Include="Assets\Script\UI\UIFlashing.cs" />
     <None Include="Assets\Shader\Toon.shader" />
+    <None Include="Assets\GlobalOutline\Resources\GlobalOutline.shader" />
+    <None Include="Assets\GlobalOutline\Resources\GlobalBlur.shader" />
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
+    <None Include="Assets\GlobalOutline\Resources\GlobalOutlineReplacement.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/m0116311/Documents/GitHub/TPS/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
