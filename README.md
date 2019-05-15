@@ -1,7 +1,7 @@
 ・内容  
 プログラム場所：/Assets/Script  
 作成人数：1人  
-開発環境：UnityC#、Maya  
+開発環境：Unity2019.1.1f1 C#、Maya  
 製作期間：5～6か月程度  
 担当：プログラム、モデリング＆アニメーション（主人公だけ）  
 外部利用：GlobalOutline、Boxophobic(skybox)  
