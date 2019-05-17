@@ -28,7 +28,7 @@ public class PlayerMove : MonoBehaviour
         jumpflag = false;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (StageManager.pause == true)
         {
